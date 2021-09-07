@@ -4,13 +4,16 @@ const {NewUserController} = require("../controllers/UserControllers/AddUserContr
 const {DeleteUserController} = require("../controllers/UserControllers/DeleteUserController");
 
 var userController = require("../controllers/UserController");
+const {GetUserInfoController} = require("../controllers/UserControllers/GetUserInfoController");
 userController = new userController.UserController();
 
-var newUserController = new NewUserController();
-var deleteUserController = new DeleteUserController();
+var newUserController = new NewUserController;
+var deleteUserController = new DeleteUserController;
+var getUserInfoController = new GetUserInfoController;
 
-userRoute.get("/", userController.userList);
+userRoute.post("/", userController.userList);
 userRoute.post("/add", newUserController.addUser);
+userRoute.post("/get_info", getUserInfoController.getInfo);
 userRoute.post("/delete", deleteUserController.DeleteUser);
 userRoute.get("/change", userController.changeUser);
 
