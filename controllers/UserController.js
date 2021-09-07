@@ -1,15 +1,18 @@
-exports.userList = function (request, response) {
-    response.send("Список пользователей");
-};
+const {User} = require("../models/User");
 
-exports.addUser = function (request, response) {
-    response.send("Добавить пользователя");
-};
+class UserController {
+    userList(req, res) {
 
-exports.deleteUser = function (request, response) {
-    response.send("Удалить пользователя");
-};
+        res.send("Список пользователей");
+    };
 
-exports.changeUser = function (request, response) {
-    response.send("Изменить пользователя");
-};
+    deleteUser(req, res) {
+        res.send("Удалить пользователя");
+    };
+
+    changeUser(req, res) {
+        res.send("Изменить пользователя");
+    };
+}
+
+module.exports.UserController = UserController;

@@ -1,20 +1,10 @@
-class Task {
+const model = require("./Model")
 
-    addTask() {
-
+class Task extends model.Model {
+    constructor() {
+        let models = super();
+        return models.tasks;
     };
-
-    changeTask(){
-
-    };
-
-    deleteTask(){
-
-    };
-
-    getInfo(){
-
-    };
-
-
 }
+
+module.exports.Task = Task;

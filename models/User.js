@@ -1,19 +1,10 @@
+const model = require("./Model");
 
-class User{
-
-    addUser(){
-
-    };
-    addUserTask(){
-
-    };
-    deleteUser(){
-
-    };
-    changeUser(){
-
-    };
-    getInfo(){
-
+class User extends model.Model {
+    constructor() {
+        let models = super();
+        return models.users;
     };
 }
+
+module.exports.User = User;
