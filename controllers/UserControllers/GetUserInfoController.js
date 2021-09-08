@@ -10,9 +10,9 @@ class GetUserInfoController {
             },
             raw: true
         }).then(users => {
-            res.send({
-                User_info: users.filter(user => user.name == req.body.name),
-            });
+            res.send(
+               users.filter(user => user.name == req.body.name),
+            );
         })
 
     }

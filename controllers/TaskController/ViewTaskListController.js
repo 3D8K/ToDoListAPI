@@ -7,9 +7,9 @@ class ViewTaskListController {
             where: {'user_ id': req.body.user_id},
             raw: true
         }).then(tasks => {
-            res.send({
-                tasks: tasks.filter(task => task.user_id == req.body.id),
-            });
+            res.send(
+                tasks.filter(task => task.user_id == req.body.id),
+            );
         })
 
     }
