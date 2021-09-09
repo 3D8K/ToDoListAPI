@@ -47,7 +47,11 @@ class Model {
                 type: DataTypes.DATE,
                 allowNull: false,
                 defaultValue: Sequelize.Sequelize.literal('CURRENT_TIMESTAMP')
-            }
+            },
+            status: {
+            type: DataTypes.TINYINT.UNSIGNED,
+                allowNull: false
+        }
         }, {
             sequelize,
             tableName: 'tasks',

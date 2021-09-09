@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const bodyParser = require("body-parser");
 
-const database = require("./database/Database");
 const userRouter = require("./routes/UserRoutes");
 const taskRouter = require("./routes/TaskRotes");
 
