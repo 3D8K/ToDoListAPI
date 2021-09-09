@@ -4,7 +4,7 @@ class ViewTaskListController {
     ViewList(req, res) {
         let task = new Task();
         task.findAll({
-            where: {'user_ id': req.body.user_id},
+            where: {'user_ id': req.body.user_id , group: req.body.groupTask},
             raw: true
         }).then(tasks => {
             res.send(

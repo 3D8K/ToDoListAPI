@@ -7,6 +7,7 @@ class AddTaskController {
             'user_ id': req.body.user_id,
             deadline: req.body.deadline,
             info: req.body.info,
+            group: req.body.groupTask,
             status : true,
         }).then(task => {
             res.send({

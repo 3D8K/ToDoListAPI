@@ -35,9 +35,10 @@ class Model {
                     key: ' id'
                 }
             },
-            deadline: {
-                type: DataTypes.DATE,
-                allowNull: false
+            group: {
+                type: DataTypes.STRING(45),
+                allowNull: true,
+                defaultValue: ''
             },
             info: {
                 type: DataTypes.TEXT,
@@ -48,10 +49,14 @@ class Model {
                 allowNull: false,
                 defaultValue: Sequelize.Sequelize.literal('CURRENT_TIMESTAMP')
             },
-            status: {
-            type: DataTypes.TINYINT.UNSIGNED,
+            deadline: {
+                type: DataTypes.DATE,
                 allowNull: false
-        }
+            },
+            status: {
+                type: DataTypes.TINYINT.UNSIGNED,
+                allowNull: false
+            }
         }, {
             sequelize,
             tableName: 'tasks',
