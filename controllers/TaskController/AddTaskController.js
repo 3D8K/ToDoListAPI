@@ -13,10 +13,10 @@ class AddTaskController {
             res.send({
                 id: task.id,
                 success: true,
-            });
+            })}).catch(err => {
+            res.status(500).send({message: err.message})
         })
-
-    }
+    };
 }
 
 module.exports.AddTaskController = AddTaskController;
