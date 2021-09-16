@@ -65,9 +65,6 @@ class Model {
             status: {
                 type: DataTypes.TINYINT.UNSIGNED,
                 allowNull: false,
-                validate : {
-                    equals: '1'
-                }
             }
         }, {
             sequelize,

@@ -8,7 +8,7 @@ class ViewTaskListController {
             raw : false,
         }).then(tasks => {
             res.send(
-                tasks.filter(task => task.user_id == req.body.id),
+                tasks.map(function (task){return task.date.getDay()}),
             );
         })
 
