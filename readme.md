@@ -20,7 +20,7 @@ __ToDoListAPI__
 | ✅ | Отслеживание активных задач | 
 
 ### Диограмма классов
-![Alt-текск](https://sun9-68.userapi.com/impg/hKtzO42hxt1yip-PYttx2aIai0veA34alcLdPQ/WBji3EATcbk.jpg?size=2560x1533&quality=96&sign=d44d9b03e542c1d6aa3b5cf2c8051131&type=album"Диограмма классов")
+![Alt-текск](https://sun9-68.userapi.com/impg/hKtzO42hxt1yip-PYttx2aIai0veA34alcLdPQ/WBji3EATcbk.jpg?size=2560x1533&quality=96&sign=d44d9b03e542c1d6aa3b5cf2c8051131&type=album "Диограмма классов")
 ### Диограмма базы данных
 ![Alt-текст](https://sun9-71.userapi.com/impg/9L-yXaWMp5BR_0d6nxSCrgBLmxTKFZgFCAreHQ/ap8LNdL1HSo.jpg?size=457x221&quality=96&sign=c4a99491b18949a7b46524e5d272fb5f&type=album "Диограмма БД")
 =======
